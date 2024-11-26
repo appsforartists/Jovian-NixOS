@@ -30,6 +30,7 @@ in
   config = mkIf cfg.enable {
     jovian.hardware.has = {
       amd.gpu = true;
+      nonNativePaddles = true;
     };
   };
 }
